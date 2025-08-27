@@ -13,8 +13,8 @@ Welcome to my **Data Structures and Algorithms** repository! This is where I sol
 
 Feel free to clone this repo and explore the solutions. You can also use these implementations as a reference or study guide.
 
-```bash
-git clone https://github.com/yourusername/datastructures-algorithms-java.git
+    ```bash
+    git clone https://github.com/yourusername/datastructures-algorithms-java.git
 
 ## 📅 Daily Updates
 
