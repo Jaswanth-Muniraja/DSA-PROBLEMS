@@ -75,7 +75,7 @@ public class palindromeLinkedList{
             System.out.println("No, The given Linked List is not a palindrome");
             
         }
-            ListNode temp = reverse_Linked_List(head);
-        print_Linked_List(temp);
+        
+        print_Linked_List(head);
     }
 }
