@@ -36,6 +36,23 @@ public class removeNthNodeFromEndOfLL {
         return head;
     }
 
+    // II Method
+    // public static ListNode remove_Nth_From_End(ListNode head, int n){
+    //     if(head == null) return head;
+    //     ListNode fast = head;
+    //     for(int i=0; i<n; i++){
+    //         fast = fast.next;
+    //     }
+    //     if(fast == null) return head.next;
+    //     ListNode slow = head;
+    //     while(fast.next != null){
+    //         slow = slow.next;
+    //         fast = fast.next;
+    //     }
+    //     slow.next = slow.next.next;
+    //     return head;
+    // }
+
     public static void print_Linked_List(ListNode head){
         ListNode current = head;
         System.out.println("Linked List:");
