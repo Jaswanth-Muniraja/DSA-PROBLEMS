@@ -1,3 +1,5 @@
+// Stack Implementation Using LinkedList
+
 class stackNode {
   int data;
   stackNode next;
@@ -6,11 +8,12 @@ class stackNode {
     next = null;
   }
 }
-public class stack{
+
+public class stackImplementation{
   stackNode top;
   int size;
 
-  stack() {
+  stackImplementation() {
     this.top = null;
     this.size = 0;
   }
@@ -53,7 +56,7 @@ public class stack{
   }
 
   public static void main(String args[]) {
-    stack s = new stack();
+    stackImplementation s = new stackImplementation();
     s.stackPush(10);
     s.stackPush(20);
     s.stackPush(30);
