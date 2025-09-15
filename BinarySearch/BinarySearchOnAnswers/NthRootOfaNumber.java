@@ -1,9 +1,7 @@
 package BinarySearchOnAnswers;
 
-// This is only to find floor value of the sqrt of a number
-public class sqrtOfaNumber {
-
-    public static int sqrt(int num){
+public class NthRootOfaNumber {
+     public static int sqrt(int num){
         int low = 1;
         int high = 29;
         int ans = -1;
@@ -21,7 +19,7 @@ public class sqrtOfaNumber {
     }
 
     public static void main(String[] args){
-        int num = 29;
+        int num = 27;
         int sqrt = sqrt(num);
         System.out.println(sqrt);
     }
