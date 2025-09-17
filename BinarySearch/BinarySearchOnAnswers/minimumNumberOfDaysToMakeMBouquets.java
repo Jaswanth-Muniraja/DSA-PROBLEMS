@@ -1,5 +1,10 @@
 package BinarySearchOnAnswers;
 
+// You are given an array bloomDay[] where each element represents the day on which a flower blooms. 
+// You need to make m bouquets, and each bouquet requires exactly k adjacent bloomed flowers.
+
+// Find the minimum number of days required so that it is possible to make all m bouquets.
+//  If it is not possible to make m bouquets, return -1.
 public class minimumNumberOfDaysToMakeMBouquets {
 
     public static int minDays(int[] bloomDay, int m, int k){
