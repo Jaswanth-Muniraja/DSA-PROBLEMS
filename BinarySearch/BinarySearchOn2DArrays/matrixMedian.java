@@ -14,25 +14,25 @@ public class matrixMedian {
             high = Math.max(high, matrix[i][m-1]);
         }
 
-        int requiredMissingELements = (n*m)/2; // since n and m are odd n*m also gives odd, n*m/2 gives No of elements before median
+        int requiredELements = (n*m)/2; // since n and m are odd n*m also gives odd, n*m/2 gives No of elements before median
         while(low <= high){
             int mid = (low+high)/2;
-            int missingElements = CountNoOfMissingEleAtMid(matrix, mid);
-            if(missingElements <= requiredMissingELements) low = mid + 1; // The position where No of missing elements before the ele is <= requiredMissingELements 
-            else high = mid - 1;                                          // and at the ele is > requiredMissingELements is the median
+            int smallEqualElements = CountSmallEqualEleAtMid(matrix, mid);
+            if(smallEqualElements <= requiredELements) low = mid + 1; // The position where No of smallEqual elements before the ele is <= requiredELements 
+            else high = mid - 1;                                          // and at the ele is > requiredELements is the median
         }
         return low;
     }
-    public static int CountNoOfMissingEleAtMid(int[][] matrix, int val) {
+    public static int CountSmallEqualEleAtMid(int[][] matrix, int val) {
         int n = matrix.length;
         int m = matrix[0].length; 
-        int countMissing = 0;
+        int countSmallEqual = 0;
         for(int i=0; i<n; i++){
-            countMissing += upperBound(matrix[i],val);
+            countSmallEqual += upperBound(matrix[i],val);
         }
-        return countMissing;
+        return countSmallEqual;
     }
-    private static int upperBound(int[] arr, int val) {
+    public static int upperBound(int[] arr, int val) {
         int n = arr.length;
         int ans = n;
         int low = 0;
