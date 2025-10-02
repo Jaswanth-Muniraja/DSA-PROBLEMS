@@ -10,15 +10,16 @@ public class countSubsequencesWithSumK {
         return countSubsequences(arr, idx+1, sum+arr[idx], k) + countSubsequences(arr, idx+1, sum, k);
     }
 
-    private int count(int ind, int sum, int[] nums) {
-        if (sum == 0) return 1;
-        if (sum < 0 || ind == nums.length) return 0;
-        return count(ind + 1, sum - nums[ind], nums) + count(ind + 1, sum, nums);
-    }
+    // II Method
+    // public static int count(int ind, int sum, int[] nums) {
+    //     if (sum == 0) return 1;
+    //     if (sum < 0 || ind == nums.length) return 0;
+    //     return count(ind + 1, sum - nums[ind], nums) + count(ind + 1, sum, nums);
+    // }
 
-    public int countSubsequenceWithTargetSumK(int[] nums, int k) {
-        return count(0, k, nums);
-    }
+    // public static int countSubsequenceWithTargetSumK(int[] nums, int k) {
+    //     return count(0, k, nums);
+    // }
 
 
 	public static void main(String[] args) {
