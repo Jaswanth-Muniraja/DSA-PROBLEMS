@@ -25,13 +25,13 @@ public class checkSubsequenceWithSumK {
 	public static void main(String[] args) {
 	    int[] arr = {3,1,2};
         int k = 3;
-        // boolean isExists = checkSubsequences(arr,0,0,k);
-        boolean isExists = checkSubsequenceWithTargetSumK(arr,k);
+        boolean isExists = checkSubsequences(arr,0,0,k);
+        // boolean isExists = checkSubsequenceWithTargetSumK(arr,k);
         if(isExists){
             System.out.println("There is a Subsequence in the array with given sum k.");
         }else{
             System.out.println("No Subsequence present in the array with given sum k.");
         }
 	}
-    
+
 }
