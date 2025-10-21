@@ -7,6 +7,14 @@ public class noOfSetBits {
             count += (number & 1);  // Check the least significant bit
             number >>= 1;  // n = n / 2 // because dividing by 2 shifts bits to right
         }
+
+        // II Method
+        // while (number > 0) {
+        //     number = number & (number - 1); // removes the last set bit
+        //     count++;
+        // }
+
         System.out.println("Number of set bits: " + count);
     }
+
 }
